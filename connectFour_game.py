@@ -140,48 +140,5 @@ while not gameOver:
             
     drawBoard(board)
 
-##Console version   
-##    #Ask player 1
-##    if turn%2 == 0:
-##        try:
-##            selection = int(input("Player 1 moves. Type in a number 0-6: "))
-##            if isValid(board, selection):
-##                row = getNextRow(board, selection)
-##                dropPiece(board, row, selection, 1)
-##                if winningMove(board, 1):
-##                    print("Player 1 wins.")
-##                    gameOver = True
-##                
-##            else:
-##                print("Choose a correct value.")
-##                continue
-##                
-##        except:
-##            print("Choose a correct value.")
-##            continue
-##        printBoard(board)
-##    #Ask player 2
-##    else:
-##        try:
-##            selection = int(input("Player 2 moves. Type in a number 0-6: "))
-##            if isValid(board, selection):
-##                row = getNextRow(board, selection)
-##                dropPiece(board, row, selection, 2)
-##                if winningMove(board, 2):
-##                    print("Player 2 wins.")
-##                    gameOver = True
-##                
-##            else:
-##                print("Choose a correct value.")
-##                continue
-##        except:
-##            print("Choose a correct value.")
-##            continue
-##        printBoard(board)
-##
-##    turn += 1
-##
-##input("Press any key to quit.")
-
 pygame.time.wait(3000)
 quit()
